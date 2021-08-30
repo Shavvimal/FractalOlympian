@@ -1,0 +1,41 @@
+.TechBubble {
+    transform: scale(2) translate(25%, 20%);
+
+}
+
+.iconTech {
+    transform: scale(1) translate(-50%, 40%);
+    transition: fill 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+
+
+  .parentBubbleTech {
+  transition: transform 0.3s ease-in-out;
+  }
+
+  .parentBubbleTech:hover .iconTech {
+    fill: #ffb97a;
+    transform: scale(1.1) translate(-45%, 36%);
+    cursor: pointer;
+  }
+
+  .parentBubbleTech:hover{
+    transform: scale(1.1) translate(0%, 0%) ;
+  }
+
+  .techWord {
+    opacity: 0;
+    transform: scale(0.5) translate(0%, 0%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+  }
+
+  .parentBubbleTech:hover ~ .techWord {
+    opacity: 1;
+    transform: scale(1.1) translate(0%, 0%);
+    /* cursor: pointer; */
+  }
+
+
+  

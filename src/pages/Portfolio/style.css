@@ -1,0 +1,30 @@
+#portfolio a {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+#portfolio a:hover {
+  text-shadow: none;
+  text-decoration: underline;
+}
+
+#portfolio .current {
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul a {
+  font-family: "Open Sans Condensed", sans-serif;
+  display: inline-block;
+  padding: 5px;
+}

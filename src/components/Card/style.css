@@ -1,0 +1,80 @@
+.PortCard {
+
+  background-image: linear-gradient(
+    0deg
+    , RGBA(49,138,255,0.9), RGBA(182,51,253,0.9));
+
+  /* background: rgba(0, 0, 0, 0.5);  */
+}
+
+.techcard2 {
+  transform: translateY(-100%);
+}
+
+.PortCard a {
+  text-decoration: none !important;
+}
+
+
+.PortBubble {
+  transform: scale(1.75) translate(28.57%, -22.85%);
+}
+
+.iconPort {
+  transform: scale(1) translate(-50%, -42.85%);
+  transition: fill 0.3s ease-in-out,
+              transform 0.3s ease-in-out;
+}
+
+.bothBubbles {
+  transform: scale(1) translate(20%, 0%);
+}
+
+.parentBubblePort {
+  transition: transform 0.3s ease-in-out;
+  }
+
+  .parentBubblePort:hover .iconPort {
+    fill: #ffb97a;
+    transform: scale(1.1) translate(-45%, -37.4%);
+    cursor: pointer;
+  }
+
+  .parentBubblePort:hover{
+    transform: scale(1.1) translate(0%, 0%) ;
+  }
+
+  .PortWord {
+    opacity: 0;
+    transform: scale(0.5) translate(0%, 0%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+  }
+
+  .parentBubblePort:hover ~ .PortWord {
+    opacity: 1;
+    transform: scale(1.1) translate(0%, 0%);
+    /* cursor: pointer; */
+  }
+
+
+  .anim {
+
+    transition: fill 0.3s ease-in-out,
+                transform 0.3s ease-in-out,
+                opacity 0.3s ease-in-out,
+  }
+
+  .cross {
+    transform: translate(0%, -170%);
+  } 
+
+
+  .parentCard {
+    transition: 
+                transform 0.3s ease-in-out;
+  }
+
+  .parentCard:hover{
+    transform: scale(1.1) translate(0%, 0%) ;
+  }

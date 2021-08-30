@@ -1,0 +1,36 @@
+nav {
+  position: fixed;
+  float: left;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bg-1 {
+  background-color: #1b002d;
+}
+
+.bg-2 {
+  background-color: #1b002d;
+}
+
+.bg-3 {
+  background-color: #1b002d;
+}
+
+.bg-4 {
+  background-color: #1b002d;
+}
+
+.bg-5 {
+  background-color: #1b002d;
+}
+
+#navtrans {
+  transform: scale(1) translate(-39px, 0%);
+}

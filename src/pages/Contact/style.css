@@ -1,0 +1,108 @@
+.heeboo {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.bg-custom {
+  --tw-bg-opacity: 1;
+  background-color: rgba(133, 83, 254, var(--tw-bg-opacity));
+}
+
+.bg-svg {
+  /* background-image: url(./assets/Bubble_main.svg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+  /* background-image: linear-gradient(
+    120deg,
+    #00b6fe,
+    #336dff,
+    #664cff,
+    #8042ff,
+    #953fff,
+    #b043ff,
+    #e553f4,
+    #fe6ad9,
+    #ff78bf,
+    #ffb67c
+  ); */
+
+  background-color: #1b002d;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%231B002D' cx='50' cy='0' r='50'/%3E%3Cg fill='%231b002e' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%231b0030' cx='50' cy='100' r='50'/%3E%3Cg fill='%231b0031' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%231a0033' cx='50' cy='200' r='50'/%3E%3Cg fill='%231a0035' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%231a0036' cx='50' cy='300' r='50'/%3E%3Cg fill='%23190038' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23190039' cx='50' cy='400' r='50'/%3E%3Cg fill='%2318003b' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%2318003d' cx='50' cy='500' r='50'/%3E%3Cg fill='%2317003e' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23160040' cx='50' cy='600' r='50'/%3E%3Cg fill='%23150042' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23140043' cx='50' cy='700' r='50'/%3E%3Cg fill='%23120045' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23110047' cx='50' cy='800' r='50'/%3E%3Cg fill='%230f0049' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%230d004a' cx='50' cy='900' r='50'/%3E%3Cg fill='%230a004c' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%2307004E' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+
+  /* background-image: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2018/05/Gradient-Roundup-Illustrator-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+#contact-card {
+  transform: translate(0%, -8%);
+}
+
+.ContactBubble {
+  transform: scale(2) translate(25%, 20%);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.iconContact {
+  transform: scale(1) translate(-50%, 40%);
+  transition: fill 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.parentBubbleContact {
+  transition: transform 0.3s ease-in-out;
+}
+
+.parentBubbleContact:hover .iconContact {
+  fill: #ffffff;
+  transform: scale(1.1) translate(-45%, 36%);
+  cursor: pointer;
+}
+
+.parentBubbleContact:hover {
+  transform: scale(1.1) translate(0%, 0%);
+}
+
+.parentBubbleContact:hover .ContactBubble {
+  opacity: 1;
+}
+
+.techWord {
+  opacity: 0;
+  transform: scale(0.5) translate(0%, 0%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.parentBubbleContact:hover ~ .techWord {
+  opacity: 1;
+  transform: scale(1.1) translate(0%, 0%);
+  /* cursor: pointer; */
+}
+
+#icon3contact {
+  text-decoration: none;
+}
+
+#icon3contact {
+  /* text-shadow: 0 0 1px #ffb97a; */
+  text-shadow: none;
+}
+
+#icon2contact {
+  text-decoration: none;
+}
+
+#icon2contact {
+  /* text-shadow: 0 0 1px #ffb97a; */
+  text-shadow: none;
+}
+
+#icon1contact {
+  text-decoration: none;
+}
+
+#icon1contact {
+  /* text-shadow: 0 0 1px #ffb97a; */
+  text-shadow: none;
+}
